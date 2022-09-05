@@ -1,0 +1,43 @@
+.user-card {
+  display: flex;
+  align-items: center;
+
+  &__wrap {
+    margin-right: 31px;
+  }
+
+  &__avatar {
+    margin-left: 10px;
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__name {
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--text-header-2);
+  }
+
+  &__position {
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--c-muted);
+  }
+
+  &__exit {
+    padding-right: 22px;
+    padding-left: 11px;
+    height: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

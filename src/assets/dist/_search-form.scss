@@ -1,0 +1,22 @@
+.search-form {
+  &.menu__item {
+    background: #f5f8fd;
+  }
+
+  .menu__item-name:before {
+    display: none;
+  }
+
+  &__search-input {
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 90%;
+    color: #8c99b2;
+    background: none;
+  }
+
+  &__search-input:focus::-webkit-input-placeholder {
+    color: #606580;
+  }
+}

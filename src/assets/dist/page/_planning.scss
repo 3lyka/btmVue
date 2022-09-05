@@ -1,0 +1,120 @@
+.planning {
+  .main-content__head {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+
+      .el-button {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &__history {
+    &-head {
+      h1 {
+        color: #303549;
+        font-weight: normal;
+        margin-bottom: 4px;
+      }
+
+      label {
+        color: #8c99b2;
+        font-size: 13px;
+
+        span {
+          margin-left: 6px;
+          color: #303549;
+        }
+      }
+    }
+
+    &-items {
+      margin-top: 16px;
+    }
+
+    &-item {
+      padding: 8px 16px;
+      background: #f5f8fd;
+
+      &:not(:first-of-type) {
+        margin-top: 8px;
+      }
+
+      &-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          color: #606580;
+        }
+
+        &-user {
+          display: flex;
+          background-color: #8090f0;
+          padding: 4px 8px;
+          border-radius: 1em;
+          color: #ffffff;
+          font-size: 13px;
+
+          svg {
+            height: 16px;
+            margin-left: 8px;
+          }
+
+          &--external {
+            background-color: #45c5fa;
+          }
+        }
+      }
+
+      &-status {
+        margin-top: 12px;
+        font-size: 13px;
+      }
+
+      &-comment {
+        margin-top: 12px;
+
+        label {
+          color: #606580;
+        }
+      }
+    }
+  }
+}
+
+.planning-detail {
+  .main-content__head {
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &:not(:first-of-type) {
+        margin-top: 24px;
+      }
+
+      & > div {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  .el-date-editor {
+    --el-date-editor-daterange-width: 230px;
+  }
+
+  .el-input-basis .el-input {
+    width: 300px;
+  }
+
+  .el-input-kp .el-input {
+    width: 200px;
+  }
+
+  .el-table thead {
+    font-size: 11px !important;
+  }
+}

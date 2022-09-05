@@ -1,0 +1,249 @@
+$menuItemMarginLeft: null;
+
+.menu {
+  max-width: $widthHeaderLeft;
+  width: 100%;
+
+  box-shadow: 4px 0px 8px rgba(140, 153, 178, 0.25);
+  color: var(--c-text-menu-side-muted);
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  background: white;
+  height: 100%;
+  z-index: 2;
+
+  &_expanded {
+    min-width: 320px;
+  }
+
+  &__toggle {
+    background-color: var(--c-background-menu-side-actions);
+    cursor: pointer;
+    user-select: none;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__toggle-icon_open {
+    transform: rotate(180deg);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid #f5f8fd;
+
+    &_active {
+      .menu__item-name:before {
+        display: none;
+      }
+
+      .menu__item-img {
+        width: 38px;
+        background: rgba(0, 137, 255, 0.2);
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 2px;
+          background-color: #0089ff;
+        }
+      }
+
+      .menu__item-name {
+        background: rgba(0, 137, 255, 0.2);
+        border-left: 1px solid #ffffff;
+      }
+
+      .menu__item-text {
+        color: #303549;
+        margin-left: 16px;
+      }
+    }
+
+    &-name {
+      display: flex;
+      position: relative;
+      align-items: center;
+      height: 100%;
+      flex-grow: 1;
+      width: 100%;
+      min-width: 280px;
+    }
+
+    &-name:before {
+      z-index: 1;
+      position: absolute;
+      right: 16px;
+      width: 7px;
+      height: 11px;
+      content: '';
+      background-image: url(../img/arrow.svg);
+      background-size: contain;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      font-family: Tahoma;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      color: #606580;
+      $menuItemMarginLeft: 17px !global;
+      margin-left: $menuItemMarginLeft;
+    }
+
+    &-img {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-right: 1px solid #f5f8fd;
+    }
+
+    &-img_no-frame {
+      position: relative;
+      width: 40px;
+      height: 40px;
+    }
+
+    &-img_no-frame img {
+      margin: 12px;
+    }
+
+    &-img_no-frame svg {
+      margin: 12px;
+    }
+
+    &-decor {
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00a73d;
+    }
+
+    &-img img {
+      margin: 12px;
+    }
+
+    &-img svg {
+      margin: 12px;
+    }
+  }
+
+  &__helpdesk {
+    margin-top: auto;
+    // position: fixed;
+    // bottom: 0;
+  }
+
+  &__helpdesk-item {
+    margin-top: 1px;
+  }
+
+  &__feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+    background: #f5f8fd;
+    color: #606580;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-img svg {
+      margin: 12px;
+    }
+
+    &-img img {
+      margin: 12px;
+    }
+
+    &-text {
+      font-family: Tahoma;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      margin-left: $menuItemMarginLeft;
+
+      // todo: рассмотреть добавление класса через IntersectionObserver https://stackoverflow.com/questions/16302483/event-to-detect-when-positionsticky-is-triggered
+      width: 263px;
+    }
+
+    &-button {
+      margin-right: 8px;
+      display: inline-block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 48px;
+      height: 24px;
+      background-color: #8c99b2;
+      background-image: url(../img/theme_light_sun.svg);
+      background-position: 29.22px 50%;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 18px;
+      border: 1px solid #c4d3e9;
+      box-shadow: none;
+      transition: (all 0.2s ease-in-out);
+      &:hover:after {
+        //  background-color: darken($whiteLight, 20%);
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        top: 1px;
+        left: 1px;
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+      }
+      &:checked.menu__feedback-button {
+        box-shadow: inset 0 0 0 15px #0089ff;
+        &:after {
+          left: 25px;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}

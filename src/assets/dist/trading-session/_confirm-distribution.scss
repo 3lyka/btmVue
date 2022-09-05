@@ -1,0 +1,31 @@
+.confirm-distribution {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d7e2f2;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0089ff;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 15px;
+    min-width: 199px;
+    color: #ffffff;
+
+    &:hover {
+      background: #0089ff;
+      opacity: 0.9;
+      color: #ffffff;
+    }
+  }
+
+  &__button_disable {
+    color: #303549;
+    background: #d7e2f2;
+  }
+}

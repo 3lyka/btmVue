@@ -1,0 +1,37 @@
+.el-button {
+  --el-button-border-color: transparent;
+
+  --el-font-size-base: 13px;
+  --el-border-base: none;
+
+  padding: 8px 16px;
+
+  &--default {
+    --el-button-bg-color: transparent;
+    --el-button-hover-bg-color: transparent;
+    --el-button-disabled-bg-color: transparent;
+  }
+
+  &--primary {
+    --el-button-bg-color: #0089ff;
+    --el-button-hover-bg-color: rgba(0, 137, 255, 0.7);
+  }
+
+  &--info {
+    --el-button-bg-color: #d7e2f2;
+    --el-button-hover-bg-color: rgba(215, 226, 242, 0.7);
+    --el-button-text-color: #303549;
+    --el-button-hover-text-color: #303549;
+
+    --el-button-disabled-bg-color: #d7e2f2;
+    --el-button-disabled-text-color: #303549;
+  }
+
+  // & + .el-button {
+  //   margin-left: 16px;
+  // }
+
+  &.is-disabled {
+    opacity: 0.5;
+  }
+}

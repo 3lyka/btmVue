@@ -1,0 +1,39 @@
+.el-message-box {
+  --el-messagebox-border-radius: 2px !important;
+  --el-messagebox-width: 440px !important;
+  --el-box-shadow-light: 0px 0px 8px rgba(140, 153, 178, 0.75) !important;
+  --el-message-close-size: 16px !important;
+
+  &__header {
+    --el-messagebox-padding-primary: 22px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+
+    border-bottom: 1px solid #d7e2f2;
+  }
+
+  &__title {
+    --el-messagebox-title-color: #606580;
+    --el-messagebox-font-size: 17px !important;
+    line-height: 24px !important;
+    font-weight: bold;
+  }
+
+  &__content {
+    padding: 16px 22px !important;
+  }
+
+  &__btns {
+    padding: 14px 24px !important;
+    justify-content: space-between;
+
+    .el-button {
+      flex-grow: 1;
+
+      &--default {
+        --el-border-base: 1px solid;
+        --el-button-border-color: #c4d3e9;
+      }
+    }
+  }
+}

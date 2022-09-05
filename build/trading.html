@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trading</title>
+    <link href="dist/style.css" rel="stylesheet">
+    <script src="dist/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__left">
+            <div class="logo header__logo">
+                <div class="header__logo-img">
+                    <img width="75" height="36" src="img/logo_systeam.svg">
+                </div>
+                <svg width="16" height="60" viewBox="0 0 16 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 30C1 26.15 4.15 23 8 23C11.85 23 15 26.15 15 30C15 33.85 11.85 37 8 37C4.15 37 1 33.85 1 30Z" stroke="#C4D3E9" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.2002 27.5498L9.6502 29.9998L7.2002 32.4498" stroke="#C4D3E9" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 23L7.5 -4.37114e-08L8.5 0L8.5 23L7.5 23Z" fill="#C4D3E9"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 60L7.5 37L8.5 37L8.5 60L7.5 60Z" fill="#C4D3E9"/>
+                </svg>
+            </div>
+            <div class="header__bitum-map">
+                <div class="header__bitum-map-text">Bitum MAP</div>
+                <button type="button" class="decore-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7998 10H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 16H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 22H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="header__bitum-list"></ul>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__title">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.15 11.4002H1.85C1.25 11.4002 0.75 10.9002 0.75 10.3002V3.3002C0.75 2.7002 1.25 2.2002 1.85 2.2002H14.2C14.8 2.2002 15.3 2.7002 15.3 3.3002V10.3502C15.25 10.9502 14.75 11.4002 14.15 11.4002Z" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 11.4004V13.4004" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.65039 13.75H11.3504" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="header__title-text">Торговые сессии</p>
+            </div>
+            <div class="user-card">
+                <div class="user-card__avatar">
+                    <img width="32" height="32" src="img/user.svg">
+                </div>
+                <div class="user-card__wrap">
+                    <div class="user-card__name">Фамилия И.О.</div>
+                    <div class="user-card__position">должность</div>
+                </div>
+                <div class="user-card__info">
+                    <output class="user-card__count">10</output>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.54988 2.1502L1.04988 13.4002C0.849883 13.7502 1.09988 14.2002 1.49988 14.2002H14.4999C14.8999 14.2002 15.1499 13.7502 14.9499 13.4002L8.44988 2.1502C8.24988 1.8002 7.74988 1.8002 7.54988 2.1502Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 6.75V9.3" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 11.3501V11.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button type="button" class="decore-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7998 10H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 16H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 22H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="title">
+    <div class="container">
+        <div class="title__left">
+            <div class="title__text">Торги</div>
+            <div class="title__status">
+                <div class="status status_sucsess">Завершены</div>
+            </div>
+            <div class="title__time-interval">
+                <div class="time-interval">9:30 – 11:30</div>
+            </div>
+        </div>
+        <div class="title__right">
+            <span class="title__close">
+                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2L2 14" stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 2L14 14" stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                 </svg>
+            </span>
+        </div>
+    </div>
+</div>
+<section class="content">
+    <div class="container">
+        <div class="content__box">
+            <div class="content__left">
+                <div class="lot-detail">
+                    <div class="lot-detail__box">
+                        <div class="lot-detail__title">
+                            <div class="lot-detail__title-img">
+                                <img src="./img/oil.svg">
+                            </div>
+                            <div class="lot-detail__title-shipment">
+                                <div class="lot-detail__title-shipment-text">Отгрузка</div>
+                                <div class="lot-detail__title-shipment-date">11.11.21</div>
+                            </div>
+                        </div>
+                        <div class="lot-detail__description">
+                            <div class="lot-detail__description-name">Московский нефтеперерабатывающий завод</div>
+                            <div class="lot-detail__description-mark">PMB 40/100-48 (PMB Type 1), затаренный в битублок (АО "АБЗ "МАГИСТРАЛЬ")</div>
+                            <div class="lot-detail__description-create">Выставлено</div>
+                            <div class="lot-detail__description-count-weight">4 150 т</div>
+                            <div class="lot-detail__description-box">
+                                <div class="lot-detail__description-receipt">
+                                    <div class="lot-detail__description-receipt-title">Продано</div>
+                                    <div class="lot-detail__description-receipt-count-weight">4 150 т</div>
+                                </div>
+                                <div class="lot-detail__description-receipt">
+                                    <div class="lot-detail__description-receipt-title">Участников</div>
+                                    <div class="lot-detail__description-receipt-count">49/50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-detail__sale">
+                            <div class="lot-detail__sale-wrap">
+                                <div class="lot-detail__sale-description">
+                                    <div class="lot-detail__sale-description-balance">Остаток</div>
+                                    <div class="lot-detail__sale-description-count-weight">150 т</div>
+                                </div>
+                                <div class="lot-detail__sale-button-wrap">
+                                    <button class="lot-detail__sale-button">Не продан</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lot-detail__info">
+                            <div class="lot-detail__info-title">Цена по прейскуранту</div>
+                            <div class="lot-detail__info-region">МНПЗ
+                                <span class="lot-detail__info-region-price">17 800 ₽</span>
+                            </div>
+                            <div class="lot-detail__confirm">
+                                <div class="lot-detail__confirm-item">
+                                    <p class="lot-detail__confirm-item-text">Торговые предложения, требующие согласования</p>
+                                    <span class="lot-detail__confirm-item-count">1</span>
+                                </div>
+                                <div class="lot-detail__confirm-item">
+                                    <button class="lot-detail__confirm-item-button">Согласовать с УМИОП</button>
+                                </div>
+                            </div>
+
+                            <div class="lot-detail__info-title-region">Регион</div>
+                            <div class="lot-detail__info-region">г. Москва
+                                <span class="lot-detail__info-region-price">17 800 ₽</span>
+                            </div>
+                            <div class="lot-detail__info-comment">Комментарий</div>
+                            <div class="lot-detail__info-comment-text">Обеспечить остаток 800 т для последующего распределения по основным заявкам (просьба ООО “ИнвестПроект”)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div class="sub-header">
+                    <div class="sub-header__wrap">
+                        <div class="sub-header__item">
+                            <div class="sub-header__title">Предложения контрагентов</div>
+                        </div>
+                        <div class="sub-header__item-button">
+                            <button type="button" class="sub-header__button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2999 5.2C11.6499 3.55 10.7499 2.65 9.0999 1H3.5999C3.0999 1 2.6499 1.4 2.6499 1.95V14.1C2.6499 14.6 3.0499 15.05 3.5999 15.05H4.6499" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.84985 1V5.5H13.2999" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.6499 8.5L13.2999 15" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.2999 8.5L7.6499 15H9.6999" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Выгрузить в Excel</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="trading-list">
+                        <table class="trading-list__table">
+                            <tbody>
+                                <tr class="trading-list__title">
+                                    <td class="trading-list__title-item-time">Время подачи</td>
+                                    <td class="trading-list__title-item-counterparty">Контрагент</td>
+                                    <td class="trading-list__title-item-address">Адрес доставки</td>
+                                    <td class="trading-list__title-item-delivery-date">Дата доставки</td>
+                                    <td class="trading-list__title-item-price trading-list__item-item_decrease">Цена за тонну</td>
+                                    <td class="trading-list__title-item-order trading-list__item-item_increase">По заявке, т</td>
+                                    <td class="trading-list__title-item-volume-buy">Объем к покупке, т</td>
+                                    <td class="trading-list__title-item-status">Статус предложения</td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Принято</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__item-price_low">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text trading-confirm__text_agreed">Согласовано УМИОП</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text trading-confirm__text_on-approval">На согласовании УМИОП</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item trading-list__item_reject">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__item-price_low">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text trading-confirm__text_rejected">Отклонено УМИОП</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="trading-list__item trading-list__item_reject">
+                                    <td class="trading-list__item-time">09:41:55</td>
+                                    <td class="trading-list__item-counterparty">ООО “СибирьБитум”</td>
+                                    <td class="trading-list__item-address">125047, Москва г, Брестская 3-я ул, дом № 82, строение 4</td>
+                                    <td class="trading-list__item-delivery-date">17.11.2021</td>
+                                    <td class="trading-list__item-price trading-list__row-item_price">19800,00</td>
+                                    <td class="trading-list__item-order">250</td>
+                                    <td class="trading-list__item-volume-buy">
+                                        <input type="text">
+                                    </td>
+                                    <td class="trading-list__item-status">
+                                        <div class="trading-confirm">
+                                            <div class="trading-confirm__text">Отклонено</div>
+                                            <input class="trading-confirm__button" type="checkbox">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="content__box">
+            <footer class="footer">
+                <div class="confirm-distribution confirm-distribution__footer">
+                    <div class="confirm-distribution__button">Подтвердить распределение</div>
+                </div>
+            </footer>
+        </div>
+        <aside class="aside">
+
+        </aside>
+    </div>
+</section>
+</body>
+</html>

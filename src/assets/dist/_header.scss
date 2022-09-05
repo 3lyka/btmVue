@@ -1,0 +1,291 @@
+$widthHeaderLeft: null;
+
+.header {
+  background-color: var(--c-background-header);
+  color: var(--c-text-header);
+
+  filter: drop-shadow(0px 4px 8px rgba(140, 153, 178, 0.25));
+  height: 60px;
+
+  .container {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-img {
+      margin-left: 16px;
+      margin-right: 19px;
+      cursor: pointer;
+    }
+  }
+
+  &__bitum-map {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid var(--c-muted);
+    white-space: nowrap;
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    padding-left: 15px;
+
+    &-text {
+      margin-right: 53px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    $widthHeaderLeft: 320px !global;
+    width: $widthHeaderLeft;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__delimiter {
+    color: var(--c-muted);
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+    &-text {
+      margin-left: 13px;
+      font-family: Tahoma;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  &__user-card {
+    margin-left: auto;
+  }
+}
+
+.select {
+  height: 32px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #303549;
+  padding: 5px;
+  background: #f5f8fd;
+  border: 1px solid #c4d3e9;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.multiplicity {
+  width: 104px;
+}
+
+.period-interval {
+  display: flex;
+
+  &__item {
+    max-width: 140px;
+    margin-right: 8px;
+    min-width: 140px;
+  }
+}
+
+.mark-bm {
+  width: 250px;
+
+  &__select {
+    width: 100%;
+  }
+}
+
+.basis {
+  width: 250px;
+
+  &__select {
+    width: 100%;
+  }
+}
+
+.prepend {
+  width: 250px;
+
+  &__select {
+    width: 100% !important;
+  }
+}
+.region {
+  &__select {
+    width: 250px !important;
+  }
+}
+.region-add {
+  margin-bottom: 32px;
+
+  &__button:hover {
+    opacity: 0.8;
+  }
+
+  &__button-icon {
+    margin-left: 9px;
+  }
+}
+
+.regions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__title {
+    display: flex;
+  }
+
+  &__title-item {
+    width: 100%;
+    min-width: 250px;
+    margin-right: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__select {
+    margin-right: 24px;
+    width: 250px !important;
+  }
+
+  &__price {
+    width: 250px !important;
+  }
+
+  &__price-icon {
+  }
+
+  &__remove-button {
+    margin-left: 8px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__remove-button-icon {
+    width: 12px;
+  }
+}
+
+.input-price {
+  height: 32px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #303549;
+  padding: 5px;
+  background: #f5f8fd;
+  border: 1px solid #c4d3e9;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.comment-form {
+  width: 100%;
+  margin-top: 16px;
+
+  &__textarea {
+    margin-top: 8px;
+    min-height: 88px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    color: #303549;
+    padding: 5px;
+    background: #f5f8fd;
+    border: 1px solid #c4d3e9;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}
+
+.trading-confirm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Tahoma;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #303549;
+
+  &__text {
+    &.trading-confirm__text_on-approval {
+      color: #f7931e;
+    }
+
+    &.trading-confirm__text_agreed {
+      color: #00a73d;
+    }
+
+    &.trading-confirm__text_rejected {
+      color: #ff1d25;
+    }
+  }
+
+  &__button {
+    margin-left: 12px;
+
+    // margin-right: 8px;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 16px;
+    background-color: #c4d3e9;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #c4d3e9;
+    box-shadow: none;
+    transition: (all 0.2s ease-in-out);
+    &:hover:after {
+      //  background-color: darken($whiteLight, 20%);
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+    }
+    &:checked.trading-confirm__button {
+      box-shadow: inset 0 0 0 15px #00a73d;
+      &:after {
+        left: 18px;
+        background-color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.el-tag {
+  --el-tag-font-size: 11px;
+  --el-tag-border-radius: 2px;
+
+  padding: 0 8px;
+  border-width: 0;
+
+  &--default {
+    --el-tag-text-color: #a56eff;
+    --el-tag-bg-color: rgba(151, 71, 255, 0.2);
+  }
+
+  &--danger {
+    --el-tag-text-color: #e18213;
+    --el-tag-bg-color: rgba(247, 147, 30, 0.2);
+  }
+
+  &--warning {
+    --el-tag-text-color: #4a53c6;
+    --el-tag-bg-color: rgba(105, 161, 245, 0.3);
+  }
+
+  &--success {
+    --el-tag-text-color: #039de0;
+    --el-tag-bg-color: rgba(3, 157, 224, 0.25);
+  }
+
+  &--info {
+    --el-tag-text-color: #118f3f;
+    --el-tag-bg-color: rgba(0, 167, 61, 0.2);
+  }
+}

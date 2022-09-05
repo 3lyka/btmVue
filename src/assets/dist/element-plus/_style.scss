@@ -1,0 +1,27 @@
+:root {
+  --el-border-radius-base: 2px;
+  --el-color-primary: var(--c-brand);
+  --el-font-size-base: 13px;
+}
+
+// todo: move to its file.
+.el-input {
+  --el-input-bg-color: var(--c-off-white);
+  --el-input-text-color: #303549;
+}
+
+/** Временно, до обновления el-plus. Появляется padding справа, даже когда не присутсвует scroll.  */
+.el-popup-parent--hidden {
+  padding-right: unset !important;
+}
+
+@import 'button';
+@import 'radio-group';
+@import 'form-item';
+
+// @import 'table'; // Перемещено в BaseTable. Файл не редактировать. Удалить после выверки стилей и замены всех table компонентов на BaseTable.
+// @import 'tag';
+// @import 'pagination';
+// @import 'input';
+// @import 'collapse';
+// @import 'message-box';

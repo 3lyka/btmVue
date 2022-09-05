@@ -1,0 +1,22 @@
+.el-radio-group {
+  .el-radio-button {
+    &:first-child .el-radio-button__inner {
+      border-left: 1px solid #c4d3e9;
+      border: 1px solid #c4d3e9;
+    }
+
+    .el-radio-button__inner {
+      border: 1px solid #c4d3e9;
+      border-left: 0;
+      --el-font-size-base: 13px;
+    }
+
+    .el-radio-button__original-radio:checked + .el-radio-button__inner {
+      --el-radio-button-checked-text-color: #0089ff;
+      --el-radio-button-checked-bg-color: rgba(0, 137, 255, 0.2);
+      --el-radio-button-checked-border-color: #0089ff;
+      border-color: #0089ff;
+      border-radius: 2px;
+    }
+  }
+}

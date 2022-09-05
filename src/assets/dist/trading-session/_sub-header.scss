@@ -1,0 +1,38 @@
+.sub-header {
+  &__title {
+    margin: 24px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #606580;
+  }
+
+  &__wrap {
+    min-height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__button {
+    color: var(--c-brand);
+    margin-left: 15px;
+    border-radius: 2px;
+  }
+
+  &__el-button {
+    color: var(--c-brand);
+  }
+
+  &__button-icon {
+    margin-right: 8px;
+  }
+}

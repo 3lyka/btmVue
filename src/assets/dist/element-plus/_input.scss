@@ -1,0 +1,16 @@
+.el-input {
+  &__inner {
+    --el-input-text-color: #303549;
+    --el-text-color-regular: #606580;
+    --el-input-bg-color: #f5f8fd;
+    --el-border-color-base: #c4d3e9;
+  }
+
+  &__suffix {
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #8c99b2;
+    }
+  }
+}

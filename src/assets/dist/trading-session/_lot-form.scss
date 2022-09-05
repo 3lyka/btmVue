@@ -1,0 +1,147 @@
+.lot-form {
+  box-shadow: -4px 0px 8px rgba(140, 153, 178, 0.25);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    max-height: 56px;
+    border-bottom: 1px solid #d7e2f2;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 0 24px;
+
+    max-height: calc(100% - 146px); // 146px === height of the &__footer
+    overflow: auto;
+    // в макете нет scrollbar - скрываем.
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* Chrome */
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+
+    border-top: 1px solid #d7e2f2;
+  }
+
+  &__header-title {
+    font-weight: bold;
+    font-size: 17px;
+    color: #606580;
+    line-height: 24px;
+  }
+
+  &__header-title-id {
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 7px;
+  }
+
+  &__header-close {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  &__item-date {
+    display: flex;
+  }
+
+  &__item-subtitle {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #8c99b2;
+  }
+
+  &__item-box-subtitle {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #606580;
+  }
+
+  &__item-box {
+    width: 100%;
+    margin-right: 24px;
+  }
+
+  &__submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px;
+  }
+
+  &__submit-button {
+    max-width: 378px;
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background: #0089ff;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  &__submit-button-close {
+    max-width: 378px;
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #0089ff !important;
+    border: 1px solid #c4d3e9;
+    margin-left: 0 !important;
+  }
+
+  &__multiplicity {
+    display: flex;
+    align-items: flex-end;
+
+    h4 {
+      margin-bottom: 28px;
+
+      label {
+        font-size: 13px;
+        color: #303549;
+      }
+    }
+  }
+
+  .regions__select .el-select__tags-text {
+    display: inline-block !important;
+    max-width: 203px !important;
+  }
+}

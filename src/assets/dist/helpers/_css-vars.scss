@@ -1,0 +1,33 @@
+/* Дизайн система. Палитра. Используем в семантических переменных. */
+:root {
+  --c-white: #ffffff;
+  --c-white-2: #d7e2f2;
+  --c-black: #272a38;
+  --c-grey: #606580;
+  --c-light-grey: #9398b6;
+  --c-blue: #0089ff;
+  --c-off-white: #f5f8fd;
+}
+
+/* Семантические переменные для использования в проекте. Далее могут быть динамически переназначены, для включения, например, темной темы. */
+:root {
+  // global
+  --c-background: var(--c-white);
+
+  --c-brand: var(--c-blue);
+
+  --c-background-menu-side-actions: var(--c-off-white);
+  --c-text-menu-side-muted: var(--c-grey);
+
+  // lot
+  --c-border-lot: var(--c-blue);
+
+  // header
+  --c-background-header: var(--c-black);
+  --c-text-header: var(--c-white);
+  --c-text-header-2: var(--c-white-2);
+
+  --c-muted: var(--c-light-grey);
+
+  --header-height: 60px;
+}

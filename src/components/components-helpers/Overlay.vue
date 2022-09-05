@@ -1,0 +1,16 @@
+<template>
+  <div class="overlay">
+    <slot />
+  </div>
+</template>
+
+<style lang="scss">
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // background-color: var(--el-overlay-color-lighter);
+}
+</style>

@@ -1,0 +1,42 @@
+.calendar-excel-modal {
+  &__date-picker {
+    max-width: 210px;
+  }
+
+  &__button {
+    margin-top: 5px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .el-input__inner {
+    background-color: #f5f8fd;
+  }
+
+  .el-dialog__body {
+    padding-bottom: 5px;
+  }
+
+  .el-form-item__error {
+    padding-top: 4px;
+  }
+
+  .el-dialog__title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .el-date-editor {
+    .el-range-separator {
+      color: #8c99b2;
+    }
+
+    .el-range__icon {
+      margin-right: 10px;
+    }
+  }
+
+  .el-form-item__label {
+    font-size: 11px;
+  }
+}

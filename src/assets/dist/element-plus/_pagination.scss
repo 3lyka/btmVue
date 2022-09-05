@@ -1,0 +1,20 @@
+.el-pagination {
+  --el-pagination-font-size: 13px !important;
+  --el-text-color-primary: #303549 !important;
+  --el-pagination-button-width: 27px !important;
+  --el-pagination-button-height: 20px !important;
+
+  .el-pager {
+    li {
+      align-items: flex-end;
+
+      &.active {
+        color: #0089ff;
+        background-color: rgba(0, 137, 255, 0.2);
+        border: 1px solid;
+        border-color: #0089ff;
+        border-radius: 2px;
+      }
+    }
+  }
+}

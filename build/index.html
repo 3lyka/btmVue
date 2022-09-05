@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week</title>
+    <link href="dist/style.css" rel="stylesheet">
+    <script src="dist/script.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__left">
+                <div class="logo header__logo">
+                    <div class="header__logo-img">
+                        <img width="75" height="36" src="img/logo_systeam.svg">
+                    </div>
+                    <svg width="16" height="60" viewBox="0 0 16 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 30C1 26.15 4.15 23 8 23C11.85 23 15 26.15 15 30C15 33.85 11.85 37 8 37C4.15 37 1 33.85 1 30Z" stroke="#C4D3E9" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.2002 27.5498L9.6502 29.9998L7.2002 32.4498" stroke="#C4D3E9" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 23L7.5 -4.37114e-08L8.5 0L8.5 23L7.5 23Z" fill="#C4D3E9"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 60L7.5 37L8.5 37L8.5 60L7.5 60Z" fill="#C4D3E9"/>
+                    </svg>
+                </div>
+                <div class="header__bitum-map">
+                <div class="header__bitum-map-text">Bitum MAP</div>
+                <button type="button" class="decore-button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7998 10H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 16H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.7998 22H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="header__bitum-list"></ul>
+            </div>
+            </div>
+            <div class="header__right">
+                <div class="header__title">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.15 11.4002H1.85C1.25 11.4002 0.75 10.9002 0.75 10.3002V3.3002C0.75 2.7002 1.25 2.2002 1.85 2.2002H14.2C14.8 2.2002 15.3 2.7002 15.3 3.3002V10.3502C15.25 10.9502 14.75 11.4002 14.15 11.4002Z" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 11.4004V13.4004" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.65039 13.75H11.3504" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="header__title-text">Торговые сессии</p>
+                </div>
+                <div class="user-card">
+                    <div class="user-card__avatar">
+                        <img width="32" height="32" src="img/user.svg">
+                    </div>
+                    <div class="user-card__wrap">
+                        <div class="user-card__name">Фамилия И.О.</div>
+                        <div class="user-card__position">должность</div>
+                    </div>
+                    <div class="user-card__info">
+                       <output class="user-card__count">10</output>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.54988 2.1502L1.04988 13.4002C0.849883 13.7502 1.09988 14.2002 1.49988 14.2002H14.4999C14.8999 14.2002 15.1499 13.7502 14.9499 13.4002L8.44988 2.1502C8.24988 1.8002 7.74988 1.8002 7.54988 2.1502Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 6.75V9.3" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 11.3501V11.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <button type="button" class="decore-button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7998 10H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.7998 16H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.7998 22H16.1998" stroke="#8C99B2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="content__box">
+                <div class="content__left">
+                    <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="search-form menu__item">
+                            <div class="menu__item-img_no-frame">
+                                <img src="img/loupe.svg">
+                            </div>
+                            <div class="menu__item-name">
+                                    <input class="menu__item-text search-form__search-input" type="text" placeholder="Найти">
+                            </div>
+                        </li>
+                        <li class="menu__item menu__item_active">
+                            <div class="menu__item-img">
+                                <span class="menu__item-decor"></span>
+                                <img src="img/money_chart_arrow_rub.svg">
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1C11.85 1 15 4.15 15 8C15 11.85 11.85 15 8 15C4.15 15 1 11.85 1 8C1 4.15 4.15 1 8 1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.9999 11.6501V6.6001H7.3999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4.3501V4.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.3999 11.6499H8.5999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1C11.85 1 15 4.15 15 8C15 11.85 11.85 15 8 15C4.15 15 1 11.85 1 8C1 4.15 4.15 1 8 1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.9999 11.6501V6.6001H7.3999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4.3501V4.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.3999 11.6499H8.5999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1C11.85 1 15 4.15 15 8C15 11.85 11.85 15 8 15C4.15 15 1 11.85 1 8C1 4.15 4.15 1 8 1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.9999 11.6501V6.6001H7.3999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4.3501V4.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.3999 11.6499H8.5999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1C11.85 1 15 4.15 15 8C15 11.85 11.85 15 8 15C4.15 15 1 11.85 1 8C1 4.15 4.15 1 8 1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.9999 11.6501V6.6001H7.3999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4.3501V4.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.3999 11.6499H8.5999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="menu__item-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1C11.85 1 15 4.15 15 8C15 11.85 11.85 15 8 15C4.15 15 1 11.85 1 8C1 4.15 4.15 1 8 1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.9999 11.6501V6.6001H7.3999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 4.3501V4.6001" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.3999 11.6499H8.5999" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="menu__item-name">
+                                <p class="menu__item-text">
+                                    Торговые сессии
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu__feedback">
+                        <div class="menu__feedback-item">
+                            <div class="menu__feedback-img">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.6502 13.9503C9.1502 14.3503 8.6002 14.5503 8.0002 14.5503C5.5002 14.5503 3.4502 10.4003 3.4502 7.70029C3.4502 5.00029 5.5002 2.80029 8.0002 2.80029C10.5002 2.80029 12.5502 5.00029 12.5502 7.70029" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.09961 7.3002C2.09961 4.0502 4.74961 1.4502 7.99961 1.4502C11.2496 1.4502 13.8996 4.10019 13.8996 7.35019" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.1 9.1502H2C1.3 9.1502 0.75 8.6002 0.75 7.9002V7.2002C0.75 6.5002 1.3 5.9502 2 5.9502H2.15V9.1502H2.1Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.8996 5.9502H13.9996C14.6996 5.9502 15.2496 6.5002 15.2496 7.2002V7.9002C15.2496 8.6002 14.6996 9.1502 13.9996 9.1502H13.8496V5.9502H13.8996Z" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.9 9L12.45 12.15H9.5V11.15H10V11.65" stroke="#8C99B2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p class="menu__feedback-text">Служба поддержки</p>
+                        </div>
+                        <input class="menu__feedback-button" type="checkbox">
+                    </div>
+                </nav>
+                </div>
+                <main class="main">
+                    <div class="sub-header">
+                        <div class="sub-header__wrap">
+                            <div class="sub-header__item-button">
+                                <button type="button" class="sub-header__button">
+                                    Перейти в ДЦБМ
+                                </button>
+                                <button type="button" class="sub-header__button">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2999 5.2C11.6499 3.55 10.7499 2.65 9.0999 1H3.5999C3.0999 1 2.6499 1.4 2.6499 1.95V14.1C2.6499 14.6 3.0499 15.05 3.5999 15.05H4.6499" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.84985 1V5.5H13.2999" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.6499 8.5L13.2999 15" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.2999 8.5L7.6499 15H9.6999" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Выгрузить в Excel</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div class="calendar">
+                            <div class="calendar__title">
+                                <div class="calendar__title-left">
+                                    <button type="calendar__title-button-left">
+                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 13L1 7L7 1" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <p class="calendar__title-date">8  —  14 ноября 2021</p>
+                                    <button type="calendar__title-button-right">
+                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L7 7L1 13" stroke="#606580" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="calendar__title-right">
+                                    <div class="calendar__tabs">
+                                        <button class="calendar__tabs-button calendar__tabs-button_active">Месяц</button>
+                                        <button class="calendar__tabs-button">Неделя</button>
+                                        <button class="calendar__tabs-button">День</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="calendar__table">
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title calendar__item-title_last">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Пн</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>8</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-sale">
+                                                <div class="calendar__lot-sale-wrap">
+                                                    <div class="calendar__lot-sale-description">
+                                                        <div class="calendar__lot-sale-description-balance">Остаток</div>
+                                                        <div class="calendar__lot-sale-description-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-sale-button-wrap">
+                                                        <button class="calendar__lot-sale-button">Не продан</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-sale calendar__lot-sale_sold">
+                                                <div class="calendar__lot-sale-wrap">
+                                                    <div class="calendar__lot-sale-description">
+                                                        <div class="calendar__lot-sale-description-balance">Остаток</div>
+                                                        <div class="calendar__lot-sale-description-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-sale-button-wrap">
+                                                        <button class="calendar__lot-sale-button">Продан</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">PMB 40/100-48 (PMB Type 1), затаренный в битублок (АО "АБЗ "МАГИСТРАЛЬ")</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-sale calendar__lot-sale_sell-out">
+                                                <div class="calendar__lot-sale-wrap">
+                                                    <div class="calendar__lot-sale-description">
+                                                        <div class="calendar__lot-sale-description-balance">Остаток</div>
+                                                        <div class="calendar__lot-sale-description-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-sale-button-wrap">
+                                                        <button class="calendar__lot-sale-button">Продать</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title calendar__item-title_last">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Вт</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>9</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_fail">Не состоялись</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title calendar__item-title_active">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Ср</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>10</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot calendar__lot_add">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 0.75V11.25" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M0.75 6H11.25" stroke="#0089FF" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Чт</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>11</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Пт</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>12</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Сб</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>13</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_processing">Обработка результатов</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar__item">
+                                    <div class="calendar__item-title">
+                                        <div class="calendar__item-title-box">
+                                            <p class="calendar__item-title-day">Вс</p>
+                                            <p class="calendar__item-title-number">
+                                                <span>14</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="calendar__item-box">
+                                        <div class="calendar__lot">
+                                            <div class="calendar__lot-title">
+                                                <div class="calendar__lot-title-img">
+                                                    <img src="./img/oil.svg">
+                                                </div>
+                                                <div class="calendar__lot-title-shipment">
+                                                    <div class="calendar__lot-title-shipment-text">Отгрузка</div>
+                                                    <div class="calendar__lot-title-shipment-date">11.11.21</div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-description">
+                                                <div class="calendar__lot-description-name">МНПЗ</div>
+                                                <div class="calendar__lot-description-mark">БНД 90/100</div>
+                                                <div class="calendar__lot-description-create">Выставлено</div>
+                                                <div class="calendar__lot-description-count-weight">4 150 т</div>
+                                                <div class="calendar__lot-description-box">
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Продано</div>
+                                                        <div class="calendar__lot-description-receipt-count-weight">4 150 т</div>
+                                                    </div>
+                                                    <div class="calendar__lot-description-receipt">
+                                                        <div class="calendar__lot-description-receipt-title">Участников</div>
+                                                        <div class="calendar__lot-description-receipt-count">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calendar__lot-info">
+                                                <div class="calendar__lot-info-title">Торги</div>
+                                                <div class="calendar__lot-info-time">09:00 — 11:30</div>
+                                                <div class="status status_sucsess">Завершены</div>
+                                                <div class="calendar__lot-info-title-region">Регион</div>
+                                                <div class="calendar__lot-info-region">г. Москва
+                                                    <span class="calendar__lot-info-region-price">17 800 ₽</span>
+                                                </div>
+                                                <div class="calendar__lot-info-comment">Комментарий</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="content__box">
+                <footer class="footer"></footer>
+            </div>
+            <aside class="aside">
+                <div class="lot-form">
+                    <div class="lot-form__header">
+                        <p class="lot-form__header-title">Лот</p>
+                        <span class="lot-form__header-close">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2L2 14" stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 2L14 14" stroke="#8C99B2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="lot-form__content">
+                        <h3 class="lot-form__title">Даты</h3>
+                        <div class="lot-form__item">
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Торги</h4>
+                                <div class="period-interval">
+                                    <div class="period-interval__item">
+                                        <input class="date-input" type="date">
+                                    </div>
+                                    <div class="period-interval__item">
+                                        <input class="time-input" type="time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Отгрузка</h4>
+                                <input class="date-input"  type="date">
+                            </div>
+                        </div>
+                        <h3 class="lot-form__title">Продукт</h3>
+                        <div class="lot-form__item">
+
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Базис</h4>
+                                <div class="basis">
+                                    <select class="select">
+                                        <option>Базис 1</option>
+                                        <option>Базис 2</option>
+                                        <option>Базис 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Марка БМ</h4>
+                                <div class="mark-bm">
+                                    <select class="select">
+                                        <option>Марка 1</option>
+                                        <option>Марка 2</option>
+                                        <option>Марка 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="lot-form__item">
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Объем, т</h4>
+                                <div class="prepend">
+                                    <input class="prepend-input" type="text">
+                                </div>
+                            </div>
+
+                            <div class="lot-form__item-box">
+                                <h4 class="lot-form__item-box-subtitle">Кратность, т</h4>
+                                <div class="multiplicity">
+                                    <select class="select">
+                                        <option>Кратность 1</option>
+                                        <option>Кратность 2</option>
+                                        <option>Кратность 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="lot-form__title">Регион продаж</h3>
+                        <div class="lot-form__item">
+                            <div class="region">
+                                <div class="region__item">
+                                    <div class="lot-form__item-box">
+                                        <h4 class="lot-form__item-box-subtitle">Регион</h4>
+                                        <div class="region__select">
+                                            <select class="select">
+                                                <option>Регион 1</option>
+                                                <option>Регион 2</option>
+                                                <option>Регион 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="lot-form__item-box">
+                                        <h4 class="lot-form__item-box-subtitle">Минимальная цена за тонну (без доставки)</h4>
+                                        <div class="region__price">
+                                            <input class="input-price" type="text">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="lot-form__item-box">
+                                    <div class="region-add">
+                                        <button class="region-add__button">Добавить регион</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form">
+                            <div class="lot-form__item-box-subtitle">Коментарий для КА</div>
+                            <textarea placeholder="Введите данные..." class="comment-form__textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="lot-form__footer">
+                        <div class="lot-form__submit">
+                            <button class="lot-form__submit-button">Создать</button>
+                            <button class="lot-form__submit-button-close">Отменить</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 572px;
+  z-index: 5;
+  background: var(--c-background);
+}

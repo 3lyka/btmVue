@@ -1,0 +1,42 @@
+<template>
+  <div class="header__title">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.15 11.4002H1.85C1.25 11.4002 0.75 10.9002 0.75 10.3002V3.3002C0.75 2.7002 1.25 2.2002 1.85 2.2002H14.2C14.8 2.2002 15.3 2.7002 15.3 3.3002V10.3502C15.25 10.9502 14.75 11.4002 14.15 11.4002Z"
+        stroke="#0089FF"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8 11.4004V13.4004"
+        stroke="#0089FF"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.65039 13.75H11.3504"
+        stroke="#0089FF"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <p class="header__title-text">Торговые сессии</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HeaderTitle',
+};
+</script>
+
+<style scoped></style>

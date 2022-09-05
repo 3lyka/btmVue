@@ -1,0 +1,48 @@
+<template>
+  <button
+    @click="$emit('clickSidebarButton')"
+    type="button"
+    class="decore-button"
+  >
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.7998 10H16.1998"
+        stroke="#8C99B2"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15.7998 16H16.1998"
+        stroke="#8C99B2"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15.7998 22H16.1998"
+        stroke="#8C99B2"
+        stroke-width="2"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+</template>
+
+<script>
+export default {
+  name: 'SidebarButton',
+};
+</script>
+
+<style scoped></style>

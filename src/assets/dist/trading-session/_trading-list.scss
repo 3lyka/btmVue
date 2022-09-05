@@ -1,0 +1,138 @@
+.trading-list {
+  margin-top: 16px;
+  overflow-x: auto;
+  max-height: calc(100vh - 297px);
+
+  &__table {
+    width: 100%;
+    // display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+    word-break: break-word;
+  }
+
+  &__item {
+    height: 56px;
+    border-bottom: 1px solid var(--c-white-2);
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  &__item_reject td {
+    color: #989aa4;
+
+    &.trading-list__item-price_low {
+      color: #fbc98e;
+    }
+
+    &.trading-list__item-price_low:before {
+      border-top: 6px solid #fbc98e;
+    }
+  }
+
+  &__item-time {
+    color: #606580;
+    padding-left: 17px;
+  }
+
+  &__item-address {
+    padding-left: 7px;
+  }
+
+  &__item-price {
+    padding-left: 24px;
+    color: #0089ff;
+  }
+  &__item-price_low {
+    color: #f7931e;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 25px;
+      left: 5px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 6px solid #f7931e;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+  }
+
+  &__item-order {
+    text-align: center;
+  }
+
+  &__item-status {
+    padding-right: 35px;
+  }
+
+  &__title {
+    height: 48px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    color: #8c99b2;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid var(--c-white-2);
+
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
+
+    &-item-time {
+      padding: 16px 17px;
+
+      width: 104px;
+    }
+
+    &-item-counterparty {
+      padding-right: 7px; // добавляет отступ при переполнении
+
+      width: 153px; // без padding-right
+    }
+
+    &-item-address {
+      padding-left: 7px;
+      padding-right: 7px; // добавляет отступ при переполнении
+
+      width: 183px; // без padding-right
+
+      @media (min-width: 1440px) {
+        width: 100%;
+      }
+    }
+
+    &-item-delivery-date {
+      // padding-left: 7px;
+      width: 104px;
+    }
+
+    &-item-price {
+      width: 104px;
+    }
+
+    &-item-order {
+      width: 80px;
+      text-align: center;
+    }
+
+    &-item-volume-buy {
+      width: 120px;
+      text-align: center;
+    }
+
+    &-item-status {
+      text-align: center;
+      width: 193px;
+      padding-right: 15px;
+    }
+  }
+}

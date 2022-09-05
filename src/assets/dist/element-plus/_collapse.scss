@@ -1,0 +1,12 @@
+.el-collapse {
+  --el-collapse-header-font-size: 13px !important;
+  --el-collapse-border-color: transparent !important;
+
+  &-item {
+    &__header {
+      font-weight: bold;
+      line-height: 16px;
+      color: #606580;
+    }
+  }
+}
